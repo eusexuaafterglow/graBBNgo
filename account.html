@@ -1,0 +1,170 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="navbar.css">
+           <link rel="icon" href="favicon.png" type="image/png">
+      <link rel="stylesheet" href="navbar.css">
+        <style>
+         
+        body {
+  font-family: sans-serif;
+  max-width: 480px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 1.2rem;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  transition: box-shadow 0.2s;
+}
+
+.card:hover {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+}
+
+h2 {
+  font-size: 1rem;
+  margin: 0 0 0.3rem 0;
+}
+
+input, textarea {
+  padding: 0.4rem 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+textarea {
+  height: 80px;
+  resize: none;
+}
+
+label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-top: 0.4rem;
+}
+
+a {
+  font-size: 0.85rem;
+  color: #333;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.btn-green {
+  display: inline-block;
+  background: #6abf69;
+  color: #fff;
+  padding: 0.3rem 1rem;
+  border-radius: 6px;
+  font-size: 0.82rem;
+  align-self: flex-start;
+}
+
+.btn-green:hover {
+  background: #57a857;
+  text-decoration: none;
+}
+
+.btn-red {
+  display: inline-block;
+  background: #e05252;
+  color: #fff;
+  padding: 0.3rem 1rem;
+  border-radius: 6px;
+  font-size: 0.82rem;
+  align-self: flex-start;
+}
+
+.btn-red:hover {
+  background: #c43d3d;
+  text-decoration: none;
+}
+
+.actions {
+  display: flex;
+  gap: 0.8rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+         </style>
+
+    </head>
+    <body>
+         <div class="navbar"> <p><strong>GraBBNGo</strong></p>
+            <a  href="home.html" class="logo"><h2>Home</h2></a>
+            <a href="account.html"class="logo"><h2>Account</h2></a>
+            <a href="favourites.html" class="logo"><h2>Favourites</h2></a>
+            <a href="cart.html" class="logo"><h2>Cart</h2></a>
+           
+        <form action="home.html">
+            <input type="text" id="Search" name="Search" class="search-input" placeholder="Search...">
+        </form>
+    </div>
+    
+
+         <br>
+         <br>
+         <br>
+         <div class="content">
+                    <div class="card">
+  <h2>About you</h2>
+  <p><strong>Name:</strong><br> Eva Engels ✏️</p>
+  <p><strong>Member since:</strong><br> 24th of January, 2024</p>
+</div>
+
+<div class="card">
+  <h2>Password and Email settings:</h2>
+  <label>Reset Password:</label>
+  <input type="password" placeholder="Current password">
+  <input type="password" placeholder="New password">
+  <input type="password" placeholder="Confirm new password">
+  <a href="#" class="btn-green">Change</a>
+
+  <label>Change email:</label>
+  <input type="email" placeholder="New email">
+  <input type="email" placeholder="Confirm new email">
+  <a href="#" class="btn-green">Change</a>
+</div>
+
+<div class="card">
+  <h2>Select payment type:</h2>
+  <p>You have not specified a payment method. Click here to add a payment method. ✏️</p>
+
+  <h2>Update address:</h2>
+  <p>✏️</p>
+</div>
+
+<div class="card">
+  <h2>Your orders:</h2>
+  <a>View your orders</a><br>
+  <a>Track your orders</a><br>
+  <a>Refund policy</a><br>
+  <a>Cancel an order</a>
+</div>
+
+<div class="card">
+  <h2>Delete your account:</h2>
+  <p>We are sorry to see you go. Leave a message below if you'd like.</p>
+  <textarea placeholder="Your message here..."></textarea>
+  <a href="firstpage.html" class="btn-red">DELETE</a>
+</div>
+
+<div class="actions">
+  <a href="firstpage.html" class="btn-red">Sign out</a>
+  <a href="firstpage.html" class="btn-green">Log out</a>
+</div>
+         </div>
+    </body>
+</html>
